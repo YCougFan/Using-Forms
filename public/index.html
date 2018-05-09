@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>My First Forms Webpage</title>
+</head>
+<body>
+<noscript>
+    You need to enable JavaScript to run this app.
+</noscript>
+<div id="root"></div>
+
+
+<form>
+    <h1>Register Here</h1>
+    Name<br>
+    <input type="text" placeholder="First Name" required><br>
+    <input type="text" placeholder="Last Name" required><br>
+    <br>
+    Email<br>
+    <input type="email" placeholder="youremail@domain.com"><br>
+    <br>
+    Phone<br>
+    <input type="tel" placeholder="(xxx) xxx-xxxx"><br>
+    <br>
+    Age (18 and older only)<br>
+    <input type="number" name="quantity" min="18" max="120"><br>
+    <br>
+    User Name <br>
+    <input type="text" name="username"><br>
+    <br>
+    Password<br>
+    <input type="password" name="psw"><br>
+    Confirm Password
+    <br>
+    <input type="password" name="pswcmbo"><br>
+    <br>
+    <input type="submit" value="Submit">
+</form>
+
+<form>
+    <h1>Forgot Password</h1>
+    Submit Name and Email<br>
+    <br>
+    <input type="text" placeholder="First & Last Name"><br>
+    <input type="email" placeholder="Email"><br>
+    <br>
+    <input type="radio" name="reset"> Reset Password via Email<br>
+    <input type="radio" name="reset"> Retrieve via Security Questions<br>
+    <br>
+    <input type="submit" value="Submit">
+</form>
+
+<form>
+    <h1>Login to your Account</h1><br>
+    User Name<br>
+    <input type="text" name="username"><br>
+    <br>
+    Password<br>
+    <input type="password" name="psw"><br>
+    <br>
+    <input type="checkbox" name="Remember Password"> Remember Password<br>
+    <br>
+    <input type="submit" value="Submit">
+</form>
+
+<!--
+  This HTML file is a template.
+  If you open it directly in the browser, you will see an empty page.
+
+  You can add webfonts, meta tags, or analytics to this file.
+  The build step will place the bundled scripts into the <body> tag.
+
+  To begin the development, run `npm start` or `yarn start`.
+  To create a production bundle, use `npm run build` or `yarn build`.
+-->
+</body>
+</html>
